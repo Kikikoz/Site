@@ -12,7 +12,7 @@ taxonomy:
 1. [Type de Dessein](#types-of-blueprints)
 1. [Composants d'un Dessein](#components-of-a-blueprint)
 
-## Qu'est ce qu'un Dessein (Blueprints dans la version originale)?
+## Qu'est ce qu'un Dessein ( NdT Blueprints en VO)?
 
 Les desseins sont une facette majeure de Grav. Ils sont les fondementaux d'un thèmes ou des intéractions entre un plugin avec le module d'administration de Grav. Ils déterminent ce que c'et un thème ou un plugin, son nom, où il est localisé sur GitHub, etc. Il produit également les options de configuration de ce thème ou de ce thème pour le module d'administration de Grav. 
 
@@ -35,7 +35,7 @@ A présent, nous allons entrer dans les détails sur le fonctionnement des Desse
 
 #### Themes et Plugins
 
-Quand ils sont utilsés dans les thèmes et plugins, la convention est de mettre un fichier **blueprints.yaml** (blueprints traduit par dessein NdT) dans le package. Se faisant, Grav peut connatre les metadonnées de cette  ressource, et de fait les introduire dans l'administration de Grav.
+Quand ils sont utilsés dans les thèmes et plugins, la convention est de mettre un fichier **blueprints.yaml** (NdT:blueprints a été  traduit par dessein) dans le package. Se faisant, Grav peut connatre les metadonnées de cette  ressource, et de fait les introduire dans l'administration de Grav.
 
 
 Ün fichier dessein (**blueprints.yaml**) est une partie important d'un thème ou du système de plugin. Ce fichier est essentiel pour le système GPM (Grav Package Manager). GPM utilises les informations contenues dans le dessein afin de mettre à disposition le plugin pour les utilisateurs.
@@ -46,3 +46,25 @@ Uenf ois que ces informations sont données, un peu plus bas dans le page du Des
 
 ![Admin Forms](blueprints_1.png?classes=shadow)
 
+Le fichier **blueprints.yaml** fonctionne avec le fichier YAML rattaché au plugin (exemple: pour le plugin assets ; **assets.yaml**). Le dessein défini ce que sont les options de configurations, et le fichier YAML de la ressource correpondante définit leur valeurs. C'est ce fichier YAML qui va ensuite être dupliqué dans l'instance de Grav section : `user/config` pour surcharger les valeurs par défauts soit manuellement soit via l'administration de Grav
+
+Pour résumer, quand on parle d'option de configuration pour un thème ou un plugin, le fichier **blueprints.yaml** le défini, and le fichier YAML portant le même nom que le plugin ou le thème détermine ses valeurs.
+
+#### Pages
+
+Une page Grav peut être tout ce que vous voulez. Une page peut être une liste d'article de blog, un article d'un blog, une page produit, une gallerie d'image, etc.
+
+Ce qui défini ce que sera une page et comment elle sera affichée est le **Dessein de le Page**.
+
+Grav défini quelques Dessein de page basique: défault (NdT: Defaut) et modulaire (Ndt: Modular). Ce sont les deux blocs de construction disponibles dans Grav.
+
+Des Desseins de page additionnels sont ajoutés et défini par le thème, qui peut décider d'ajouter autant de Desseins de page que possible ou se focaliser sur des dessein de Page particulier pour réaliser ce qu'ils veulent obtenir.
+
+Un thème Grav est bien plus flexible et puissant que ce que vous pouvez trouver sur d'autres plateformes.
+
+Cela permet de définir des thèmes spécifiques à un type d'application. Par exemple, un thème peut se spécialiser dans un de ces objectifs: 
+
+- réaliser un site de documentation, tel que celui que vous lisez actuellement.
+- réaliser un site e-commerce.
+- réaliser un blog.
+- réaliser un "portfolio".
