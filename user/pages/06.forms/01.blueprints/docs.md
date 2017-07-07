@@ -56,7 +56,7 @@ Une page Grav peut être tout ce que vous voulez. Une page peut être une liste 
 
 Ce qui défini ce que sera une page et comment elle sera affichée est le **Dessein de le Page**.
 
-Grav défini quelques Dessein de page basique: défault (NdT: Defaut) et modulaire (Ndt: Modular). Ce sont les deux blocs de construction disponibles dans Grav.
+Grav défini quelques Desseins de pages basiques: défault (NdT: Defaut) et modulaire (Ndt: Modular). Ce sont les deux blocs de construction disponibles dans Grav.
 
 Des Desseins de page additionnels sont ajoutés et défini par le thème, qui peut décider d'ajouter autant de Desseins de page que possible ou se focaliser sur des dessein de Page particulier pour réaliser ce qu'ils veulent obtenir.
 
